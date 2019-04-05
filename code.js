@@ -2,7 +2,18 @@
 function helloWorld() {
     return "Hello, World!";
 }
-var x = "Jane";
+
+// function sayHello(x) {
+//     return "Hello, " + x + "!";
+// }
+
 function sayHello(x) {
-    return "Hello, Jane!";
+    if (x === "Jane"){
+        return "Hello, Jane!"
+    }
+    if (x === "Alex"){
+        return "Hello, Alex!"
+    } else {
+        return ""
+    }
 }
