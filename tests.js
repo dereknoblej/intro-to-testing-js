@@ -39,10 +39,12 @@ describe("sayHello", function() {
     it ("should return 'Hello, World!'.", function () {
         expect(sayHello(false)).toBe("Hello, World!");
     })
+});
 
-
-
-
+describe("isFive", function() {
+    it("should be a defined function", function() {
+        expect(typeof sayFive).toBe("function");
+    })
 
 });
 
