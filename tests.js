@@ -18,7 +18,7 @@ describe("sayHello", function() {
     it("should be a defined function", function() {
         expect(typeof sayHello).toBe("function");
     });
-    it("should be a sting", function() {
+    it("should be a string", function() {
         expect(typeof sayHello()).toBe("string");
     })
     it("should return 'Hello, Jane!'.", function() {
@@ -29,7 +29,15 @@ describe("sayHello", function() {
     });
     it("Should return 'Hello, Pat!", function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
-
+    })
+    it ("should return 'Hello, World!'.", function () {
+        expect(sayHello()).toBe("Hello, World!");
+    })
+    it ("should return 'Hello, World!'.", function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    })
+    it ("should return 'Hello, World!'.", function () {
+        expect(sayHello(false)).toBe("Hello, World!");
     })
 
 
