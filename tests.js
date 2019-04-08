@@ -62,21 +62,35 @@ describe("isFive", function() {
 describe("isEven", function () {
     it ("Should be a defined function", function () {
         expect(typeof isEven).toBe("function");
-    })
+    });
     it("Should be a boolean", function () {
         expect(typeof isEven()).toBe("boolean");
-    })
+    });
     it("Should return false if the number is odd", function () {
         expect(isEven(3)).toBe(false);
-    })
+    });
     it("Should return true if the number is even", function () {
         expect(isEven(4)).toBe(true);
-    })
+    });
     it("Should return false if x is a string", function () {
         expect(isEven("t")).toBe(false);
-    })
+    });
     it("Should return false if x is a boolean", function () {
         expect(isEven(true)).toBe(false);
-
+    });
+});
+describe("isVowel", function () {
+    it ("Should be a defined function", function () {
+        expect(typeof isVowel).toBe("function");
+    });
+    it("Should return a boolean answer", function () {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+    it("Should return true if given a vowel", function () {
+        expect(isVowel("a")).toBe(true);
+    });
+    it("Should return false if given a consonant",function () {
+        expect(isVowel("l")).toBe(false);
     })
-})
+
+});
