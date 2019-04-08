@@ -44,7 +44,18 @@ describe("sayHello", function() {
 describe("isFive", function() {
     it("should be a defined function", function() {
         expect(typeof sayFive).toBe("function");
+    });
+    it("should always return a boolean", function() {
+        expect(typeof sayFive()).toBe("boolean");
+    });
+    it("Should return true if x = 5", function () {
+        expect(sayFive(5)).toBe(true);
     })
-
+    it("Should return false if x = '5'.", function () {
+        expect(sayFive("5")).toBe(false)
+    })
+    it("Should return false if the number is not 5", function () {
+        expect(sayFive(6)).toBe(false);
+    })
 });
 

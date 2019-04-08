@@ -10,6 +10,10 @@ function sayHello(x) {
         return "Hello, " + x + "!";
     }
 }
-function sayFive() {
-    
+function sayFive(x) {
+    if(x === 5){
+        return true;
+    } else {
+        return false;
+    }
 }
