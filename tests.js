@@ -59,3 +59,24 @@ describe("isFive", function() {
     })
 });
 
+describe("isEven", function () {
+    it ("Should be a defined function", function () {
+        expect(typeof isEven).toBe("function");
+    })
+    it("Should be a boolean", function () {
+        expect(typeof isEven()).toBe("boolean");
+    })
+    it("Should return false if the number is odd", function () {
+        expect(isEven(3)).toBe(false);
+    })
+    it("Should return true if the number is even", function () {
+        expect(isEven(4)).toBe(true);
+    })
+    it("Should return false if x is a string", function () {
+        expect(isEven("t")).toBe(false);
+    })
+    it("Should return false if x is a boolean", function () {
+        expect(isEven(true)).toBe(false);
+
+    })
+})

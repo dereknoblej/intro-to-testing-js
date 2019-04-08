@@ -17,3 +17,14 @@ function sayFive(x) {
         return false;
     }
 }
+function isEven(x) {
+    if(!isNaN(x)){
+        if (x % 2 === 0){
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
